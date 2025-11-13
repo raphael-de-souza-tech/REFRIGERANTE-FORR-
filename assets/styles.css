@@ -3,11 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url("./bg-01.png");
-    background-position: center;
-    background-size: cover;
-}
+
 .banner{
     display: flex;
     align-items: center;
@@ -19,6 +15,13 @@ body{
     backdrop-filter: blur(1.9px);
     -webkit-backdrop-filter: blur(1.9px);
     border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 1px 1px 1px 1px black
+}
+.banner strong{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
 }
 .banner h1{
     font-size: 4.7rem;
@@ -29,23 +32,35 @@ body{
     font-variation-settings:
     "YEAR" 1979;
     z-index: 999;
-    background-image: linear-gradient(to left, rgb(242, 242, 242), rgba(0, 0, 0, 0.952), rgba(242, 242, 242, 0.87));
+    background-image: linear-gradient(to left, rgb(230, 103, 18), rgba(0, 0, 0, 0.952), rgba(146, 37, 37, 0.87));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
+#background-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 40%;
+}
+
 .refri-container{
     justify-content: center;
     display: flex;
     align-items: center;
     overflow: hidden;
     transition: transform 0.3s ease;
+    
 }
 .refri-logo-02{
+    z-index: 999;
     cursor: pointer;
     transition: transform 3.5s ease;
 }
 .refri-logo{
+    z-index: 999;
     cursor: pointer;
     transition: transform 3.5s ease;
 }
