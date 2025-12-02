@@ -1,85 +1,55 @@
 *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #FFF5EE;
+}
+
+#banner {
+  width: 1840px;                  
+  height: 1640px;                
+  overflow: hidden;            
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;             
+  display: block;
+}
+
+.logo{
+  display: block;
+}
+.logo img{
+  width: 150px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-.banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(1.9px);
-    -webkit-backdrop-filter: blur(1.9px);
-    border: 1px solid rgba(0, 0, 0, 0.16);
-    box-shadow: 1px 1px 1px 1px black
-}
-.banner strong{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-}
-.banner h1{
-    font-size: 4.7rem;
-    font-family: "Climate Crisis", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-    "YEAR" 1979;
-    z-index: 999;
-    background-image: linear-gradient(to left, rgb(230, 103, 18), rgba(0, 0, 0, 0.952), rgba(146, 37, 37, 0.87));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-}
-#background-video{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 40%;
-}
-
-.refri-container{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    
-}
-.refri-logo-02{
-    z-index: 999;
-    cursor: pointer;
-    transition: transform 3.5s ease;
-}
-.refri-logo{
-    z-index: 999;
-    cursor: pointer;
-    transition: transform 3.5s ease;
-}
-.refri-container.vibrando .refri-logo {
-    animation: vibrate 0.2s linear infinite;
-}
-
-.refri-container.vibrando .refri-logo-02 {
-    animation: vibrate 0.2s linear infinite;
-}
-
-@keyframes vibrate {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    60% { transform: translate(2px, 2px); }
-    80% { transform: translate(2px, -2px); }
-    100% { transform: translate(0); }
 }
 
 
-
+.navbar a{
+  color: white;
+  
+}
+.navbar nav ul li a{
+  background-color: #CF7312;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.navbar ul{
+  list-style: none;
+}
