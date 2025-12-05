@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
@@ -12,6 +15,7 @@ body{
 /* 🟢🟢 */
 .logo{
   display: block;
+  margin-left: 20px;
 }
 .logo img{
   width: 150px;
@@ -40,6 +44,7 @@ body{
   font-style: normal;
   font-variation-settings:
     "YEAR" 1979;
+    gap: 200px;
 }
 .nav-links li a {
   color: rgb(246, 246, 246);
@@ -48,7 +53,22 @@ body{
   display: block;
   background-color: #CF7312;
   border-radius: 20px;
-  margin: 200px;
+  margin: 0 100px;
+}
+#b{
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #CF7312;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* background-color: white !important; */
 }
 #a{
   color: rgb(226, 226, 226);
@@ -61,7 +81,7 @@ body{
 /* 🔴🔴 */
 
 /* 🟢🟢 */
-#banner {
+#bg {
   width: 1840px;                  
   height: 1640px;                
   overflow: hidden;            
@@ -69,7 +89,7 @@ body{
   padding: 0;
   position: relative;
 }
-#banner img {
+#bg img {
   width: 100%;
   height: 100%;
   object-fit: contain;             
@@ -79,23 +99,22 @@ body{
 .conj{
   display: flex;
   position: absolute;
-  top: -5%;
-  margin-left: 550px;
+  top: 50%;                    
+  left: 70%;                   
+  transform: translate(-50%, -50%);  
+  z-index:-1;             
   cursor: pointer;
-  transition: transform 3.5s ease;
+  animation: slide-tr infinite 2s;
 }
 
 
-
-.brand-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: transform 0.3s ease;
-}
-.banner.active-conj {
-    transform: scale(1.1);
-} 
-.banner.active-conj .duck-logo {
-    transform: rotate(360deg) scale(1);
-}
+/* @keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-0px) translateX(100px);
+            transform: translateY(-100px) translateX(100px);
+  }
+} */
