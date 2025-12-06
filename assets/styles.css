@@ -20,7 +20,6 @@ body{
 .logo img{
   width: 150px;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -61,14 +60,12 @@ body{
   font-style: normal;
   font-size: 50px;
   color: #CF7312;
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.12);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  /* background-color: white !important; */
 }
 #a{
   color: rgb(226, 226, 226);
@@ -90,8 +87,8 @@ body{
   position: relative;
 }
 #bg img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 70%;
   object-fit: contain;             
   display: block;
 }
@@ -99,22 +96,14 @@ body{
 .conj{
   display: flex;
   position: absolute;
-  top: 50%;                    
+  top: 47%;                    
   left: 70%;                   
   transform: translate(-50%, -50%);  
   z-index:-1;             
   cursor: pointer;
-  animation: slide-tr infinite 2s;
+  transition: transform 3.5s ease;
+}
+.banner.conj.active{
+  transform: scale(4);
 }
 
-
-/* @keyframes slide-tr {
-  0% {
-    -webkit-transform: translateY(0) translateX(0);
-            transform: translateY(0) translateX(0);
-  }
-  100% {
-    -webkit-transform: translateY(-0px) translateX(100px);
-            transform: translateY(-100px) translateX(100px);
-  }
-} */
