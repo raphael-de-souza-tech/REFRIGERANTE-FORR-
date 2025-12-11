@@ -1,7 +1,12 @@
-const garrafasMenores = document.querySelector(".conj");
-const banner = document.querySelector(".banner");
+// document.addEventListener('DOMContentLoaded', function(){
+//     const conj = document.getElementById('conj')
 
 
-garrafasMenores.addEventListener("mouseenter", ()=>{
-    banner.classList.add("active-conj")
-})
+//     conj.addEventListener('click',()=>{
+//         conj.style.animationPlayState = 'running';
+//     });
+
+//     conj.addEventListener('click', ()=>{
+//         conj.style.animationPlayState = 'paused';
+//     });
+// })

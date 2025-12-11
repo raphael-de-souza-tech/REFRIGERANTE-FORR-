@@ -11,7 +11,7 @@ body{
   background-color: #FFF5EE;
 }
 
-
+/* ----- */
 /* 🟢🟢 */
 .logo{
   display: block;
@@ -77,33 +77,68 @@ body{
 }
 /* 🔴🔴 */
 
+
 /* 🟢🟢 */
 #bg {
-  width: 1840px;                  
-  height: 1640px;                
+  width: 100vw;    
+  max-width: 100%;              
+  height: auto;                
   overflow: hidden;            
   margin: 0;
   padding: 0;
   position: relative;
 }
 #bg img {
-  width: 90%;
-  height: 70%;
-  object-fit: contain;             
-  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;             
+  /* display: block; */
 }
+/* 🔴🔴 */
 
-.conj{
+
+/* 🟢🟢 */
+#conj{
   display: flex;
   position: absolute;
   top: 47%;                    
-  left: 70%;                   
-  transform: translate(-50%, -50%);  
-  z-index:-1;             
+  left: 60%;                   
+  z-index: -1;             
   cursor: pointer;
-  transition: transform 3.5s ease;
-}
-.banner.conj.active{
-  transform: scale(4);
+  animation: float 5s infinite;
 }
 
+@keyframes float {
+  0%{
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+  50%{
+    transform: translate(-50%, -50%) translateY(-50px);
+  }
+  100%{
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+}
+/* 🔴🔴 */
+
+
+/* 🟢🟢 */
+.banner .forro{
+  font-family: "Climate Crisis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "YEAR" 1979;
+  color: white;
+  display: flex;
+  position: absolute;
+  z-index: 999;
+}
+.banner .forro h1{ 
+  font-size: 130px;
+  margin-top: 250px;
+}
+strong{
+  margin-left: 500px;
+}
